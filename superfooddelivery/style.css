@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "VarelaRound";
+    src: url(font/VarelaRound-Regular.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "VarelaRound";
+}
+
+.container {
+    height: 100vh;
+    margin: auto;
+    max-width: 800px;
+    box-shadow: 0px 0px 300px rgba(0, 0, 0, 0.918);
+}
+
+body {
+    background: url(fundopc.jpg);
+    background-repeat: round;
+}
+
+header {
+    background-color: #ad1606;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img {
+    height: 80px;
+    padding-left: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 12px;
+    align-content: center;
+}
+
+li > a {
+    color: #fcc414;
+    text-decoration: none;
+}
+
+h1 {
+    background: url(fundosobre.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    color: #fcc414;
+    text-align: center;
+    font-size: 2rem;
+    align-content: end;
+    text-shadow: 0px 0px 10px black;
+}
+
+main {
+    background-color:#fff8e4 ;
+    height: 88vh;
+}
+
+#quemsomos > p {
+    padding: 25px;
+    text-align: justify;
+}
+
+
+p#destaque {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    background-color: #fcc414;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #ad1606;
+}
+
+
+
+
+/* CEL */
+@media (max-width: 600px){
+    body {
+        font-size: .8rem;
+        background: none;
+    }
+
+    header > img {
+        height: 60px;
+    }
+
+    h1 {
+        height: 200px;
+    }
+
+    main {
+        height: 83vh
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    p#destaque {
+        font-size: 1rem;
+    }
+
+}
