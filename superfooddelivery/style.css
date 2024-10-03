@@ -31,7 +31,7 @@ header {
 
 header > img {
     height: 80px;
-    padding-left: 10px;
+    padding: 7px;
 }
 
 ul {
@@ -47,6 +47,8 @@ li {
 li > a {
     color: #fcc414;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 h1 {
@@ -83,7 +85,21 @@ p#destaque {
     color: #ad1606;
 }
 
-
+a {
+    width: 180px;
+    align-content: center;
+    border-radius: 50px;
+    margin: auto;
+    display: block;
+    height: 35px;
+    text-align: center;
+    color: #fcc414;
+    background-color: #ad1606;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
 
 /* CEL */
@@ -94,7 +110,7 @@ p#destaque {
     }
 
     header > img {
-        height: 60px;
+        height: 55px;
     }
 
     h1 {
@@ -111,6 +127,7 @@ p#destaque {
 
     p#destaque {
         font-size: 1rem;
+        padding: 5px;
     }
 
 }

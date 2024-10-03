@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "VarelaRound";
+    src: url(font/VarelaRound-Regular.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "VarelaRound";
+}
+
+.container {
+    max-width: 800px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex:1 1 150px ;
+    text-align: center;
+    color: #ad1606;
+    font-weight: bold;
+    margin: 5px;
+}
+
+main > p{
+    text-align: center;
+}
+
+
+
+img {
+    display: block;
+    max-width: 250px;
+
+}
+
+body {
+    background: url(fundopc.jpg);
+    background-repeat: round;
+}
+
+header {
+    background-color: #ad1606;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header > img {
+    height: 80px;
+    padding: 7px;
+}
+
+
+main {
+    background-color:#fff8e4 ;
+    height: 88vh;
+}
+
+
+
+
+
+
+
+/* CEL */
+@media (max-width: 600px){
+    header > img {
+        height: 55px;
+    }
+
+    main {
+        height: 90vh
+    }
+}
