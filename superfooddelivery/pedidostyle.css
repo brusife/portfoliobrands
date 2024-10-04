@@ -10,35 +10,83 @@
 }
 
 .container {
-    max-width: 800px;
+    width: 800px;
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .item {
-    flex:1 1 150px ;
+    flex-basis: 300px ;
     text-align: center;
     color: #ad1606;
     font-weight: bold;
     margin: 5px;
 }
 
+.item:hover{
+    box-shadow: inset 0px 0px 90px #fcc414;
+}
+
 main > p{
     text-align: center;
 }
-
-
-
-img {
+.foto {
     display: block;
-    max-width: 250px;
+    height: 200px;
+}
 
+
+#foto1 {
+    background: url(icones/bebida.jpg) center center;
+    background-size: contain;
+}
+
+#foto2 {
+    background: url(icones/doce.jpg) center center;
+    background-size: contain;
+}
+
+#foto3 {
+    background: url(icones/esfiha.jpg) center center;
+    background-size: contain;
+}
+
+#foto4 {
+    background: url(icones/hamburguer.jpg) center center;
+    background-size: contain;
+}
+
+#foto5 {
+    background: url(icones/pizza.jpg) center center;
+    background-size: contain;
+}
+
+#foto6 {
+    background: url(icones/porcao.jpg) center center;
+    background-size: contain;
+}
+
+#foto7 {
+    background: url(icones/refeicao.jpg) center center;
+    background-size: contain;
+}
+
+#foto8 {
+    background: url(icones/salgado.jpg) center center;
+    background-size: contain;
+}
+
+#foto9 {
+    background: url(icones/sushi.jpg) center center;
+    background-size: contain;
 }
 
 body {
     background: url(fundopc.jpg);
-    background-repeat: round;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -56,8 +104,10 @@ header > img {
 
 
 main {
-    background-color:#fff8e4 ;
-    height: 88vh;
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    background-color:#fff8e4;
 }
 
 
@@ -72,7 +122,4 @@ main {
         height: 55px;
     }
 
-    main {
-        height: 90vh
-    }
 }
