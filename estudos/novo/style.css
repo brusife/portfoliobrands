@@ -1,5 +1,6 @@
 :root {
-    --corlaranja: #ffa549
+    --corlaranja: #ffb300;
+    --corlaranjaescura: #e09d00;
 }
 
 body {
@@ -14,15 +15,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-
+    height: 50px;
+    padding: 0px 50px ;
 }
 
 .header img {
-    max-width: 100%;
-    height: 100%;
+    height: 70px;
 }
 
 .header div {
@@ -33,23 +31,79 @@ body {
 ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 ul a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
-h1 {
+#areac a {
+    font-size: 1.1rem;
+    color: var(--corlaranjaescura);
+    font-weight: bold;
+}
+
+#botaoheader {
+    color: var(--corlaranjaescura);
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--corlaranjaescura);
+}
+
+
+.principal {
+    margin: 20px 0px;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 50.5%;
+}
+
+#esquerdo {
+    background-color: var(--corlaranjaescura);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-left: 80px;
+}
+
+#esquerdo p { 
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+
+}
+
+#esquerdo a {
+    font-size: 1.2rem;
+    background-color: white;
+    padding: 15px 40px;
+    color: var(--corlaranjaescura);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+#esquerdo a:hover{
     color: var(--corlaranja);
+    background-color: rgba(255, 255, 255, 0.863);
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+#esquerdo img {
+    width: 20px;
+}
+
+#direito {
+    background: url(imagens/lateral.jpg);
+    background-position: center;
+    background-size: cover;
 }
