@@ -169,6 +169,10 @@ footer {
 
 @media (max-width: 600px) {
 
+    body {
+        font-size: 1.1rem;
+    }
+
     #btn-mobile {
         display: block;
     }
