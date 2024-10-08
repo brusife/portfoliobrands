@@ -11,7 +11,6 @@ body {
     background-image: linear-gradient(to bottom, rgb(26, 22, 43), rgb(57, 50, 95));
     color: rgb(218, 231, 239);
     font-family: "Merriweather", serif;
-    margin-bottom: 50px;
 }
 
 section {
@@ -59,11 +58,6 @@ ul {
 a {
     text-decoration: none;
     color: rgb(234, 177, 77) ;
-}
-
-.header a {
-    border-bottom: solid;
-    border-color: rgba(234, 176, 77, 0.541) ;
 }
 
 .proximo {
@@ -130,9 +124,86 @@ img {
     flex: auto;
 }
 
+.contato {
+    border-radius: 20px;
+    background-color: rgb(234, 177, 77);
+    padding: 20px;
+    color: rgb(26, 22, 43) ;
+}
+
+#contato {
+    padding-bottom: 100px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    border-style: none;
+}
+
+.botao {
+    padding: 15px;
+    background-color: rgb(26, 22, 43);
+    border-style: none;
+    color: rgb(234, 177, 77);
+    font-family: "Merriweather", serif;
+    font-size: 1.2rem;
+    border-radius: 20px 0px;
+}
+
+#bot {
+    margin: 0px;
+    display: flex;
+    justify-content: end;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(26, 22, 43) ;
+    padding: 15px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
 @media (max-width: 600px) {
 
-   
+    #btn-mobile {
+        display: block;
+    }
+
+    .material-symbols-outlined {
+        color: rgb(234, 177, 77);
+        padding: 20px;
+    }
+
+    #menu {
+        opacity: 0;
+        display: flex;
+        position: absolute;
+        width: 30%;
+        top: 70px;
+        right: 0px;
+        background: rgb(26, 22, 43);
+        transition: .2s;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.466);
+    }
+
+    #nav.active #menu {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+
+    #menu li {
+        flex-basis: 10px;
+        border-bottom: solid;
+        border-color: rgba(234, 176, 77, 0.219);
+    }
+
     .container {
         grid-template-columns: 1fr 1fr;
     }
