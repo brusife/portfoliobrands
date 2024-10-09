@@ -1,6 +1,7 @@
 :root {
     --corlaranja: #ffb300;
     --corlaranjaescura: #e09d00;
+    --marrom: #836400;
 }
 
 body {
@@ -10,17 +11,21 @@ body {
 }
 
 .header {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 90px;
     padding: 0px 50px ;
 }
 
 .header img {
-    height: 70px;
+    height: 60px;
 }
 
 .header div {
@@ -38,13 +43,24 @@ ul a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1.1rem;
 }
 
+#fh {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
 #areac a {
-    font-size: 1.1rem;
     color: var(--corlaranjaescura);
     font-weight: bold;
+    padding: 10px 30px; 
+    border-radius: 10px;
+}
+
+#areac a:hover{
+    background-color: #fff0cda2;
 }
 
 #botaoheader {
@@ -55,12 +71,17 @@ ul a {
     border-radius: 10px;
     border-style: solid;
     border-color: var(--corlaranjaescura);
+    cursor: pointer;
+}
+
+#botaoheader:hover {
+    background-color: #fff0cda2
 }
 
 
 .principal {
-    margin: 20px 0px;
-    height: 75vh;
+    
+    height: 730px;
     display: grid;
     grid-template-columns: 1fr 50.5%;
 }
@@ -84,9 +105,9 @@ ul a {
 }
 
 #esquerdo a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: white;
-    padding: 15px 40px;
+    padding: 15px 70px;
     color: var(--corlaranjaescura);
     font-weight: bold;
     text-decoration: none;
@@ -106,4 +127,120 @@ ul a {
     background: url(imagens/lateral.jpg);
     background-position: center;
     background-size: cover;
+}
+
+#meio {
+    order: 1;
+    background-color: #c2c2c2;
+    display: block;
+    position: sticky;
+    margin-top: -80px;
+    margin-left: 140px;
+    margin-bottom: 100px;
+}
+
+#dmeio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 70px 20px;
+}
+
+#dmeio h2 {
+    font-size: 2.5rem;
+}
+
+#dmeio p {
+    font-size: 1.1rem;
+    padding: 10px 0px;
+}
+
+.botaot {
+    text-decoration: none;
+    color: var(--marrom);
+    padding: 12px 35px;
+    font-weight: bolder;
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--marrom);
+}
+
+.botaot:hover {
+    background-color: #8a600054;
+}
+
+#segmeio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 50px;
+    padding: 50px 65px;
+}
+
+#segmeio h2, h3 {
+    color: #333333;
+}
+
+#segmeio p {
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    padding: 0px 5px 5px 0px;
+}
+
+#sme p {
+    padding: 20px 0px;
+}
+
+#sme h2 {
+    font-size: 2.5rem;
+}
+
+#smd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+#smd img {
+    width: 45px;
+}
+
+#smd h3 {
+    margin-left: -20px;
+    border-left: solid;
+    padding-left: 20px;
+    border-color: var(--marrom);
+}
+
+#divisoria {
+    margin-top: 200px;
+    height: 400px;
+    background-color: transparent;
+}
+
+#divisoria::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    height: 700px;
+    width: 100%;
+    background-color:var(--corlaranjaescura);
+    transform: skewY(-4deg);
+}
+
+#divemp {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+#flateral {
+    margin-top: -100px;
+    background-image: url(imagens/lateraldois.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
 }
