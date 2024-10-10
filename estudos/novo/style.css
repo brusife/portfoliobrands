@@ -294,7 +294,7 @@ ul a {
     border-color: white;
 }
 .botaotb:hover {
-    background-color: #83640069;
+    background-color: #85858569;
 }
 
 #divisoria2 {
@@ -409,7 +409,7 @@ ul a {
     position: absolute;
     z-index: -1;
     content: '';
-    height: 400px;
+    height: 350px;
     width: 100%;
     background-color:var(--marrom);
     transform: skewY(-4deg);
@@ -425,9 +425,67 @@ ul a {
 }
 
 #dab {
+    margin-top: -400px;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-items: center;
+}
+
+#dab h2 {
+    font-size: 2.5rem;
+}
+
+footer {
+    margin-top: 200px;
+    background-color: #241f1f;
+    padding-top: 50px;
+}
+
+#foot1 {
+    padding-bottom: 90px;
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#foot1 p {
+    color: white;
+    font-size: .8rem;
+    padding-bottom: .8rem;
+}
+
+#foot1 h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#foot1 h3, #foot1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#foot1 a:hover {
+    text-decoration: underline;
+}
+
+#foot2 {
+    background-color: #3d3c3c;
+}
+
+#foot2 p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 50px;
+    color: white;
+    margin-bottom: -20px;
+}
+
+#foot2 a {
+    color: #ffb300;
+    text-decoration: none;
 }
