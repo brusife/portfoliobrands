@@ -20,7 +20,7 @@ body {
 .header {
     position: sticky;
     top: 0px;
-    z-index: 2;
+    z-index: 10000;
     padding: 0px 20px;
     background-color: rgb(0, 0, 0);
     height: 100px;
@@ -178,4 +178,69 @@ hr {
 #lshows p {
     border-bottom: var(--laranja) solid 1px;
     padding: 5px;
+}
+
+#res {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+
+#res img {
+    border-radius: 20px;
+    width: 100px;
+}
+
+#res a {
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.bandas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bandas h2 {
+    color: white;
+}
+
+.bandas p {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3px;
+}
+
+.bandas a {
+    color: var(--laranja);
+    text-decoration: none;
+}
+
+footer {
+    padding-top: 30px ;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+footer img {
+    width: 180px;
+}
+
+footer p {
+    padding: 5px;
+    color: white;
+}
+
+footer a{
+    color: var(--laranja);
+    text-decoration: none;
+    font-weight: bold;
 }
