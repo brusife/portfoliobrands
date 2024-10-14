@@ -5,6 +5,11 @@
     --laranja: #fd810d;
 }
 
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -52,14 +57,29 @@ body {
     color: var(--laranja);
 }
 
+
 nav {
-    display: none;
+    opacity: 0;
+    display: block;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    border-radius: 0px 0px 20px 100px;
+    transition: .4s;
+    text-align: center;
+
 }
+
+nav.active {
+    opacity: 1;
+    top: 80px;
+}
+
 
 #menu {
     color: var(--laranja);
 }
-
 
 
 .container {
@@ -253,20 +273,26 @@ footer a{
         background-position: center;
     }
 
-    nav {
-        display: flex;
-    }
-
     #menu {
         display: none;
     }
 
+    nav {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        opacity: 1;
+        background: none;
+    }
+
     .header ul {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        list-style: none;
-        gap: 60px;
+        flex-direction: row;
+        gap: 50px;
     }
 
     .header {
@@ -277,7 +303,7 @@ footer a{
     }
     .cont {
         background-color: rgba(117, 117, 117, 0.507);
-        width: 930px;
+        max-width: 900px;
         margin: auto;
     }
 
@@ -342,12 +368,12 @@ footer a{
     }
 
     #esquerda {
-        padding-left: 25px;
+        padding-left: 35px;
         flex-basis: 250px;
     }
 
     #direita {
-        padding-right: 25px;
+        padding-right: 35px;
         flex-basis: 250px;
     }
 
@@ -367,5 +393,6 @@ footer a{
         color: rgb(209, 209, 209);
         text-decoration: none;
     }
+
 
 }
