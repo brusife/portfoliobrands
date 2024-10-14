@@ -327,6 +327,11 @@ footer a{
         width: 100%;
     }
 
+    .container2 {
+        width: 80%;
+        border-radius: 20px;
+    }
+
     #cal {
         margin: auto;
     }
