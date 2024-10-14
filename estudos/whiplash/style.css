@@ -49,8 +49,7 @@ body {
 }
 
 .header a:hover {
-    font-weight: bold;
-    background-color: rgba(210, 105, 30, 0.26);
+    color: var(--laranja);
 }
 
 nav {
@@ -243,4 +242,130 @@ footer a{
     color: var(--laranja);
     text-decoration: none;
     font-weight: bold;
+}
+
+.laterais {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    body {
+        background-position: center;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .header ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 60px;
+    }
+
+    .header {
+        padding: 0px 50px;
+        height: 65px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.705);
+    }
+    .cont {
+        background-color: rgba(117, 117, 117, 0.507);
+        width: 930px;
+        margin: auto;
+    }
+
+    .fundo {
+        background-color: rgba(0, 0, 0, 0.87);
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    .newst {
+        grid-template-columns: 15% 1fr;
+    }
+
+    #agenda {
+        grid-template-columns: 30% 1fr;
+    }
+
+    #agenda img {
+        width: 100%;
+    }
+
+    #cal {
+        margin: auto;
+    }
+
+    .resenhas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    #res {
+        flex-direction: row;
+    }
+
+    .bandas {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .bandas a {
+        padding-right: 15px;
+    }
+
+    .sobrenos {
+        text-align: center;
+    }
+
+    .laterais {
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 345px;
+    }
+
+    #esquerda {
+        padding-left: 25px;
+        flex-basis: 250px;
+    }
+
+    #direita {
+        padding-right: 25px;
+        flex-basis: 250px;
+    }
+
+    #esquerda p {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #esquerda img {
+        width: 100%;
+    }
+    
+    #esquerda a, #direita a {
+        font-size: .9rem;
+        color: rgb(209, 209, 209);
+        text-decoration: none;
+    }
+
 }
